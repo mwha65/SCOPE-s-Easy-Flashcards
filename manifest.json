@@ -2,24 +2,24 @@
   "name": "Card Stack",
   "short_name": "Card Stack",
   "description": "Flashcard study app \u2014 paper-style stacks and clips",
-  "start_url": "./",
+  "start_url": "/SCOPE-s-Easy-Flashcards/index.html",
+  "scope": "/SCOPE-s-Easy-Flashcards/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#f0ebe0",
   "theme_color": "#2c2416",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "/SCOPE-s-Easy-Flashcards/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "icon-512.png",
+      "src": "/SCOPE-s-Easy-Flashcards/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
-  ],
-  "scope": "./"
+  ]
 }

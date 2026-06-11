@@ -1,10 +1,10 @@
-const CACHE = 'cardstack-v1';
+const CACHE = 'cardstack-v2';
 const ASSETS = [
-  './',
-  './index.html',
-  './manifest.json',
-  './icon-192.png',
-  './icon-512.png'
+  '/SCOPE-s-Easy-Flashcards/',
+  '/SCOPE-s-Easy-Flashcards/index.html',
+  '/SCOPE-s-Easy-Flashcards/manifest.json',
+  '/SCOPE-s-Easy-Flashcards/icon-192.png',
+  '/SCOPE-s-Easy-Flashcards/icon-512.png'
 ];
 
 self.addEventListener('install', e => {
@@ -21,6 +21,6 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   e.respondWith(
-    caches.match(e.request).then(cached => cached || fetch(e.request).catch(() => caches.match('./index.html')))
+    caches.match(e.request).then(cached => cached || fetch(e.request).catch(() => caches.match('/SCOPE-s-Easy-Flashcards/index.html')))
   );
 });
